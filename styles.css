@@ -1,0 +1,354 @@
+/* Reset some default styles */
+body, button, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Apply some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(65,65,65,255);
+    
+}
+h1{
+    font-size: 3rem;
+}
+
+header {
+    background: transparent; /* Set the header background to transparent */
+    color: #fff;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute; /* Position the navbar absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Set a higher z-index for the navbar */
+}
+
+.logo img {
+    width: 100px;
+    z-index: 3; /* Set a higher z-index for the logo to appear on top of the image */
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.sign-in-button, .language-selector {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    z-index: 3; /* Set a higher z-index for the buttons to appear on top of the image */
+}
+
+/* Add a shadow to the banner */
+.banner {
+    background: url('bkg.jpg') center/cover no-repeat;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1; /* Set a lower z-index for the image */
+    box-shadow: inset 100px 1000px 100px 100px rgba(0, 0, 0, 0.5); /* Add an inset box shadow inside the image */
+
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.sign-up-button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3; /* Set a higher z-index for the sign-up button to appear on top of the image */
+}
+
+
+.email-input {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center both horizontally and vertically */
+}
+
+.email-input input[type="email"] {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: none;
+}
+
+.email-input button.get-started-button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.email-input button.get-started-button:hover {
+    background: #ff0000; /* Change background color on hover */
+}
+
+/* Style for the sections */
+
+.section {
+    background: black; /* Background color for the sections */
+    padding: 190px;
+    padding-left: 310px;
+    margin-top: 10px;
+    flex: 1; /* Make the sections equally share the available space */
+    height: 300px;
+}
+
+/* Style for the section content */
+.section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last-section {
+    background: black; /* Background color for the sections */
+    padding:  190px;
+    padding-left: 310px;
+    margin-top: 10px;
+    flex: 1; /* Make the sections equally share the available space */
+    height: 530px;
+}
+
+.last-content {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.last-content h1{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+/* Style for the left row containing h1 and p */
+.left-row {
+    flex: 1; /* Allow the left row to take up half the available space */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding to separate the text from the images */
+    color: #fff;
+}
+
+/* Style for the right row containing images */
+.right-row {
+    flex: 1; /* Allow the right row to take up half the available space */
+}
+
+.left-row1 {
+    flex: 1; /* Allow the right row to take up half the available space */
+}
+
+/* Style for the image container */
+.left-row1 .image-container {
+    position: relative;
+    display: inline-block; /* Maintain inline-block display for stacking elements */
+}
+
+/* Style for the image */
+.left-row1 .image-containerz img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the overlay box */
+.overlay-box {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+    transform: translateX(35%); /* Center it horizontally */
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    border: 1px solid white;
+    color: #fff;
+    display: flex;
+}
+
+.right-row1 {
+    flex: 1; /* Allow the left row to take up half the available space */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding to separate the text from the images */
+    color: #fff;
+}
+/* Style for the paragraphs */
+.section-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.last-section p{
+    color: #fff;
+}
+/* Style for the image container */
+.image-container {
+    position: relative;
+    display: inline-block; /* Maintain inline-block display for stacking elements */
+    width: 500px; /* Set a fixed width for the container */
+    height: 400px; /* Set a fixed height for the container */
+}
+.image-containers{
+    position: relative;
+    display: inline-block; /* Maintain inline-block display for stacking elements */
+    width: 500px; /* Set a fixed width for the container */
+    height: 400px; /* Set a fixed height for the container */
+}
+.image-containerz{
+    position: relative;
+    display: inline-block; /* Maintain inline-block display for stacking elements */
+    width: 500px; /* Set a fixed width for the container */
+    height: 400px; /* Set a fixed height for the container */
+}
+/* Style for the video */
+.image-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    width: 90%; /* Make the video cover the entire container */
+    height: 90%;
+}
+
+/* Style for the image */
+.image-container img {
+    position: absolute;
+    top: auto;
+    left:auto;
+    width: 100%; /* Make the image cover the entire container */
+    height: 100%    ;
+    z-index: 3;
+}
+
+.image-containers video {
+    position: absolute;
+    top: 10%;
+    left: 20%   ;
+    bottom: auto;
+    right: auto;
+    width: 85%; /* Make the video cover the entire container */
+    height: auto;
+}
+
+/* Style for the image */
+.image-containers img {
+    position: absolute;
+    top: auto;
+    left:auto;
+    width: auto; /* Make the image cover the entire container */
+    height: auto;
+    z-index: 3;
+}
+
+ ul{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(65,65,65,255);
+    margin: 1px;
+}
+
+.email-inputs input[type="email"] {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: none;
+}
+
+.email-inputs .get-started-button{
+    background-color: #e50914;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 5px; 
+}
+.handles{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding: 20px;
+    color: gray;
+}
+footer .info{
+    color: gray;
+    cursor: pointer;
+}
+.info span{
+    text-decoration: underline;
+}
+footer {
+    background: #111;
+    color: gray;
+    text-align: center;
+    padding: 10px 0;
+}
+.overlay-box > #imag{
+    position: relative;
+    height: 90px;
+    padding: 5px;
+}
+.overlay-box >p{
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
